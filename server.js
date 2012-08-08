@@ -15,7 +15,8 @@ io.sockets.on('connection', function (socket) {
         if (data.type == 'client') {
             socket.join('clients');
             socket.emit('status', 'ok');
-            
+
+            io.sockets.in('browsers').emit('newClient', { client: socket.id });
             console.log('Got new client');
         } else if (data.type == 'browser') {
             socket.join('browsers');
@@ -23,9 +24,25 @@ io.sockets.on('connection', function (socket) {
         }
     });
 
+    socket.on('getClients', function(data) {
+        var roomClients = io.sockets.clients('clients');
+
+        if (roomClients.length != 0) {
+            var clients = [];
+            roomClients.forEach(function(client) {
+                clients.push(client.id);
+            });
+            
+            console.log('Sending clients', clients);
+            io.sockets.in('browsers').emit('clientList', { clients: clients });
+        } else {
+            console.log('Found no clients');
+        }
+    });
+
     socket.on('uname', function(data) {
-        console.log('Sending uname to browsers');
-        io.sockets.in('browsers').emit('uname', data);
+        console.log('Sending uname to browsers', data);
+        io.sockets.in('browsers').emit('sendUname', data);
     });
 
     socket.on('send', function(data) {
@@ -33,5 +50,10 @@ io.sockets.on('connection', function (socket) {
         
         io.sockets.in('clients').emit(data.cmd);
     });
+
+    socket.on('disconnect', function() {
+        io.sockets.in('browsers').emit('leaveClient', { client: socket.id });
+    });
+    
 });
 

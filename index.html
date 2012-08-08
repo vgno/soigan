@@ -13,7 +13,39 @@
 
               // Connect to the server
               socket.emit('yo', { type: 'browser', id: 'USERAGENT' });
+
+
+              socket.on('status', function(data) {
+                  console.log('Asking for clients');
+                  socket.emit('getClients');
+              });
+
+              socket.on('clientList', function(data) {
+                  console.log('Got clients', data);
+
+                  data.clients.forEach(function(client) {
+                      logMessage('Got client: ' + client);
+                  });
+              });
+
+              socket.on('newClient', function(data) {
+                  logMessage('Got client: ' + data.client);
+              });
+
+              socket.on('leaveClient', function(data) {
+                  logMessage('Client left: ' + data.client);
+              });
               
+              socket.on('sendUname', function(data) {
+                  logMessage('Got uname ' + data.type);
+              });
+
+              // Når vi har fått status OK, send request der man ber om alle aktive klienter
+              // bygg array og list med jquery
+
+              // Når vi får newClient event så legger vi til klienten i array
+              // Når vi får leaveClient event så fjerner vi klienten fra array
+
               $('#uname').on('click', function() {
                   logMessage('Getting unames');
                   socket.emit('send', { cmd: 'getUname' });
