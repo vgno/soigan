@@ -1,0 +1,13 @@
+{
+  "name": "soigan",
+  "description": "Nagios reverted",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "socket.io": "0.9.9",
+    "socket.io-client": "0.9.9",
+    "express": "3.x"
+   
+
+  }
+}
