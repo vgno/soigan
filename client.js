@@ -11,8 +11,8 @@ socket.emit('client', { my: 'data' });
 
 var http = require('http');
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World\n');
-    }).listen(13373, '127.0.0.1');
-    console.log('Server running at http://127.0.0.1:1337/');
+
+setInterval(function() {
+  console.log('Alive!');
+  }, 5000 );
+console.log("Starting up!");
