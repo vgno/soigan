@@ -3,12 +3,12 @@ var app = express();
 var http = require('http');
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
+var logger = io.log;
+
+io.set('log level', 2);
+
 
 server.listen(3000);
-
-app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
-});
 
 app.use(express.static(__dirname + '/public'));
 
@@ -17,9 +17,8 @@ io.sockets.on('connection', function (socket) {
         if (data.type == 'client') {
             socket.join('clients');
             socket.emit('status', 'ok');
-
-            io.sockets.in('browsers').emit('newClient', { client: socket.id });
-            console.log('Got new client');
+            io.sockets.in('browsers').emit('newClient', { client: data.id });
+            logger.info('Got new client "' + data.id + '"' );
         } else if (data.type == 'browser') {
             socket.join('browsers');
             socket.emit('status', 'ok');
@@ -35,20 +34,20 @@ io.sockets.on('connection', function (socket) {
                 clients.push(client.id);
             });
             
-            console.log('Sending clients', clients);
+            logger.info('Sending clients', clients);
             io.sockets.in('browsers').emit('clientList', { clients: clients });
         } else {
-            console.log('Found no clients');
+            logger.info('Found no clients');
         }
     });
 
     socket.on('uname', function(data) {
-        console.log('Sending uname to browsers', data);
+        logger.info('Sending uname to browsers', data);
         io.sockets.in('browsers').emit('sendUname', data);
     });
 
     socket.on('send', function(data) {
-        console.log('Sending', data.cmd);
+        logger.info('Sending', data.cmd);
         
         io.sockets.in('clients').emit(data.cmd);
     });
