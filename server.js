@@ -11,7 +11,6 @@ io.set('log level', 1);
 
 server.listen(3000);
 
-
 app.use(express.static(__dirname + '/public'));
 
 io.sockets.on('connection', function (socket) {
@@ -24,6 +23,7 @@ io.sockets.on('connection', function (socket) {
         } else if (data.type == 'browser') {
             socket.join('browsers');
             socket.emit('status', 'ok');
+            util.log('Got new Browser "' + data.id +  '"' )
         }
     });
 
