@@ -1,5 +1,6 @@
 var express = require('express');
 var util = require('util');
+var uuid = require('node-uuid');
 var app = express();
 var http = require('http');
 var server = http.createServer(app);
@@ -50,13 +51,12 @@ io.sockets.on('connection', function (socket) {
 
     socket.on('send', function(data) {
         util.log('Sending', data.cmd);
-        
         io.sockets.in('clients').emit(data.cmd);
     });
 
-    socket.on('munin', function(data) {
+    socket.on('sendMunin', function(data) {
         util.log('Recived Munin data');
-        io.sockets('browsers').emit('setMunin');
+        io.sockets('browsers').emit('displayMunin');
     });
 
     socket.on('disconnect', function() {

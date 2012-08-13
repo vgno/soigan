@@ -46,20 +46,26 @@ socket.on('getUname', function (data) {
     socket.emit('uname', { type: os.type() });
 });
 
-
-socket.on('getMunin', function (data) {
+socket.on('munin', function (data) {
     util.log("Fire off a munin plugin and return data");
+    switch(data.action) {
+        case "fetch":
+            util.log("Executing plugin");
+            child = exec('ls | wc -l',
+                function (error, stdout, stderr) {
+                    util.log('stdout: ' + stdout);
+                    socket.emit('munin', { type: stdout });
+                    util.log('stderr: ' + stderr);
+                    if (error !== null) {
+                        util.log('exec error: ' + error);
+                    }});
+            break;
+        default:
+            util.log("What happend here?");
+    }
 
-    child = exec('ls | wc -l',
-        function (error, stdout, stderr) {
-            util.log('stdout: ' + stdout);
-            socket.emit('munin', { output: stdout });
-            util.log('stderr: ' + stderr);
-            if (error !== null) {
-                util.log('exec error: ' + error);
-            }
-        });
 });
+
 
 util.log("Starting up!");
 
