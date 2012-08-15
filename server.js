@@ -14,13 +14,30 @@ server.listen(3000);
 
 app.use(express.static(__dirname + '/public'));
 
+/* channels
+ core - core commands (or use auth)
+ munin - munin stuff
+ deploy - Deploymentstuff
+ func - run a command
+ info - sending information back and forth
+
+ New client
+ 1. client connects sends type, id, version, hostname
+
+ "core", { action: "auth",
+
+ http://www.danielbaulig.de/socket-ioexpress/ (use sio.set('authorization', function (data, accept) {)
+ */
+
 io.sockets.on('connection', function (socket) {
-    socket.on('info', function(data) {
+    socket.on('auth', function(data) {
         if (data.type == 'client') {
             socket.join('clients');
             if (data.id) {
                 // Check if this is a valid data.id
                 util.log("client sent id" + data.id);
+                // Let's just say it's a correct id
+                socket.emit('core', {"status": "ok"})
             } else {
                 var id = uuid.v4();
                 socket.emit('info', { 'uuid': id });

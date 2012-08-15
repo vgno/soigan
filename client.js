@@ -23,7 +23,7 @@ socket.on('connect', function() {
     if (identity) {
         socket.emit('info', { 'type': 'client', 'id': identity });
     } else {
-        socket.emit('info', { 'type' : 'client', 'id': 'unknown' });
+        socket.emit('info', { 'type' : 'client' });
     }
 
     setInterval(function() {
