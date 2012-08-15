@@ -15,9 +15,17 @@ server.listen(3000);
 app.use(express.static(__dirname + '/public'));
 
 io.sockets.on('connection', function (socket) {
-    socket.on('yo', function(data) {
+    socket.on('info', function(data) {
         if (data.type == 'client') {
             socket.join('clients');
+            if (data.id) {
+                // Check if this is a valid data.id
+                util.log("client sent id" + data.id);
+            } else {
+                var id = uuid.v4();
+                socket.emit('info', { 'uuid': id });
+                util.log("Sending " + id + " to new client");
+            }
             socket.emit('status', 'ok');
             io.sockets.in('browsers').emit('newClient', { client: data.id });
             util.log('Got new client "' + data.id + '"' );
@@ -28,7 +36,7 @@ io.sockets.on('connection', function (socket) {
         }
     });
 
-    socket.on('getClients', function(data) {
+    socket.on('getClients', function() {
         var roomClients = io.sockets.clients('clients');
 
         if (roomClients.length != 0) {
@@ -62,6 +70,7 @@ io.sockets.on('connection', function (socket) {
     socket.on('disconnect', function() {
         io.sockets.in('browsers').emit('leaveClient', { client: socket.id });
     });
-    
+
+
 });
 

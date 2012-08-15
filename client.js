@@ -2,16 +2,29 @@ var os = require('os');
 var io = require('socket.io-client');
 var util = require('util');
 var exec = require('child_process').exec;
+var fs = require('fs');
 var child;
 
 var serverUrl = 'ws://localhost:3000/';
 var socket = io.connect(serverUrl);
 
+try {
+var identity = fs.readFileSync("identity").toString();
+}
 
+catch (err) {
+    util.log("Could not load identifyfile" + err);
+}
+
+util.log("identiy is " + identity);
 
 socket.on('connect', function() {
     util.log("Connected to " + serverUrl);
-    socket.emit('yo', { 'type': 'client', 'id': os.hostname() });
+    if (identity) {
+        socket.emit('info', { 'type': 'client', 'id': identity });
+    } else {
+        socket.emit('info', { 'type' : 'client', 'id': 'unknown' });
+    }
 
     setInterval(function() {
         util.log('Munin Push!');
@@ -41,7 +54,7 @@ socket.on('reconnect_failed', function () {
     util.log("Reconnect Failed to " + serverUrl);
 });
 
-socket.on('getUname', function (data) {
+socket.on('getUname', function () {
     util.log('Asked for uname', os.type());
     socket.emit('uname', { type: os.type() });
 });
