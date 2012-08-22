@@ -1,0 +1,1716 @@
+{
+   "languages": {
+    "perl": {
+      "version": "5.12.4",
+      "archname": "darwin-thread-multi-2level"
+    },
+    "java": {
+      "version": "1.6.0_33",
+      "hotspot": {
+        "name": "Java HotSpot(TM) 64-Bit Server VM",
+        "build": "20.8-b03-424, mixed mode"
+      },
+      "runtime": {
+        "name": "Java(TM) SE Runtime Environment",
+        "build": "1.6.0_33-b03-424-11M3720"
+      }
+    },
+    "php": {
+      "builddate": "(cli) (built: Feb",
+      "version": "5.3.10"
+    },
+    "python": {
+      "builddate": "Jun 16 2011, 16:59:05",
+      "version": "2.7.1"
+    },
+    "ruby": {
+      "version": "1.8.7",
+      "gems_dir": "/opt/local/lib/ruby/gems/1.8",
+      "release_date": "2012-06-29",
+      "host_os": "darwin11",
+      "gem_bin": "/opt/local/bin/gem",
+      "target": "i686-apple-darwin11",
+      "target_os": "darwin11",
+      "bin_dir": "/opt/local/bin",
+      "host": "i686-apple-darwin11",
+      "host_vendor": "apple",
+      "ruby_bin": "/opt/local/bin/ruby",
+      "target_cpu": "i686",
+      "host_cpu": "i686",
+      "platform": "i686-darwin11",
+      "target_vendor": "apple"
+    }
+  },
+  "hostname": "air-3",
+  "os_version": "11.4.0",
+  "ipaddress": null,
+  "domain": "local",
+  "filesystem": {
+    "map auto_home": {
+      "kb_available": 0,
+      "block_size": 512,
+      "mount_options": [
+        "automounted",
+        "nobrowse"
+      ],
+      "kb_size": 0,
+      "fs_type": "autofs",
+      "percent_used": "100%",
+      "mount": "/home",
+      "kb_used": 0
+    },
+    "map -hosts": {
+      "kb_available": 0,
+      "block_size": 512,
+      "mount_options": [
+        "nosuid",
+        "automounted",
+        "nobrowse"
+      ],
+      "kb_size": 0,
+      "fs_type": "autofs",
+      "percent_used": "100%",
+      "mount": "/net",
+      "kb_used": 0
+    },
+    "devfs": {
+      "kb_available": 0,
+      "block_size": 512,
+      "mount_options": [
+        "local",
+        "nobrowse"
+      ],
+      "kb_size": 183,
+      "fs_type": "devfs",
+      "percent_used": "100%",
+      "mount": "/dev",
+      "kb_used": 183
+    },
+    "/dev/disk0s2": {
+      "kb_available": 46758288,
+      "block_size": 512,
+      "mount_options": [
+        "local",
+        "journaled"
+      ],
+      "kb_size": 244277768,
+      "fs_type": "hfs",
+      "percent_used": "81%",
+      "mount": "/",
+      "kb_used": 197263480
+    }
+  },
+  "platform_build": "11E53",
+  "dmi": {
+  "fqdn": "air-3.local",
+  "network": {
+    "settings": {
+      "net.inet6.icmp6.nd6_mmaxtries": "3",
+      "net.inet6.ip6.select_srcif_debug": "0",
+      "net.inet6.ip6.auto_linklocal": "1",
+      "net.local.stream.recvspace": "8192",
+      "net.inet6.ip6.defmcasthlim": "1",
+      "net.inet.tcp.background_io_enabled": "1",
+      "net.inet.tcp.rfc1644": "0",
+      "net.inet6.ip6.fw.verbose": "0",
+      "net.inet.igmp.debug": "0",
+      "net.inet.ip.fw.static_count": "1",
+      "net.inet.tcp.tcp_timer_advanced": "7",
+      "net.inet.ip.fw.dyn_ack_lifetime": "300",
+      "net.inet.tcp.ecn_initiate_out": "0",
+      "net.inet6.ipsec6.esp_randpad": "-1",
+      "net.inet6.ip6.maxifdefrouters": "16",
+      "net.inet.tcp.sack_globalholes": "0",
+      "net.inet.ip.dummynet.searches": "0",
+      "net.inet.tcp.rexmt_thresh": "2",
+      "net.smb.fs.kern_deprecatePreXPServers": "1",
+      "net.inet.igmp.v2enable": "1",
+      "net.inet.igmp.sendra": "1",
+      "net.inet6.ip6.fw.verbose_limit": "0",
+      "net.inet.ip.keepfaith": "0",
+      "net.link.ether.inet.host_down_time": "20",
+      "net.link.ether.inet.useloopback": "1",
+      "net.inet.ip.dummynet.max_chain_len": "16",
+      "net.inet.ip.fw.dyn_fin_lifetime": "1",
+      "net.inet6.icmp6.nodeinfo": "3",
+      "net.inet6.ip6.maxdynroutes": "1024",
+      "net.inet.ip.mcast.maxgrpsrc": "512",
+      "net.inet.tcp.rtt_min": "100",
+      "net.inet.tcp.bg_target_qdelay": "100",
+      "net.inet6.icmp6.nd6_debug": "0",
+      "net.inet6.ip6.kame_version": "2009/apple-darwin",
+      "net.link.bridge.debug": "0",
+      "net.inet.ipsec.esp_trans_deflev": "1",
+      "net.inet.igmp.gsrdelay": "10",
+      "net.local.dgram.maxdgram": "2048",
+      "net.inet.ip.dummynet.red_lookup_depth": "256",
+      "net.smb.fs.tcpsndbuf": "261120",
+      "net.inet6.mld.v1enable": "1",
+      "net.inet6.ipsec6.ecn": "0",
+      "net.inet.ip.intr_queue_maxlen": "50",
+      "net.inet6.icmp6.errppslimit": "500",
+      "net.inet.ip.select_srcif_debug": "0",
+      "net.inet.ip.gifttl": "30",
+      "net.key.spi_trycnt": "1000",
+      "net.inet.ip.sourceroute": "0",
+      "net.inet.ip.forwarding": "0",
+      "net.inet.raw.maxdgram": "8192",
+      "net.inet.tcp.background_io_trigger": "5",
+      "net.key.natt_keepalive_interval": "20",
+      "net.inet.ipsec.ecn": "0",
+      "net.inet.ip.fw.autoinc_step": "100",
+      "net.inet6.ip6.maxifprefixes": "16",
+      "net.inet.tcp.timer_fastquantum": "100",
+      "net.inet.icmp.bmcastecho": "1",
+      "net.inet.tcp.tcp_lq_overflow": "1",
+      "net.inet.ip.fw.dyn_buckets": "256",
+      "net.inet.tcp.slowlink_wsize": "8192",
+      "net.inet.ip.check_route_selfref": "1",
+      "net.inet.tcp.blackhole": "0",
+      "net.inet.tcp.keepidle": "7200000",
+      "net.inet.ip.maxchainsent": "49",
+      "net.inet.ip.portrange.hilast": "65535",
+      "net.key.larval_lifetime": "30",
+      "net.inet6.ip6.maxfrags": "8192",
+      "net.inet.tcp.reass.cursegments": "0",
+      "net.inet.tcp.always_keepalive": "0",
+      "net.key.debug": "0",
+      "net.inet.ipsec.dfbit": "0",
+      "net.inet.igmp.recvifkludge": "1",
+      "net.inet.ip.fw.dyn_syn_lifetime": "20",
+      "net.local.stream.tracemdns": "0",
+      "net.inet.tcp.randomize_ports": "0",
+      "net.inet.ip.fw.dyn_udp_lifetime": "10",
+      "net.inet6.ip6.hlim": "64",
+      "net.inet.igmp.sendlocal": "1",
+      "net.inet.tcp.newreno_sockets": "20",
+      "net.inet.icmp.icmplim": "250",
+      "net.inet.ip.use_route_genid": "1",
+      "net.inet.icmp.maskrepl": "0",
+      "net.idle.route.drain_interval": "10",
+      "net.inet6.ip6.dad_count": "1",
+      "net.inet.tcp.timer_slowquantum": "500",
+      "net.key.esp_keymin": "256",
+      "net.inet.ip.mcast.maxsocksrc": "128",
+      "net.inet.udp.maxdgram": "9216",
+      "net.key.spi_maxval": "268435455",
+      "net.inet.ip.maxfragsperpacket": "128",
+      "net.inet.ip.rtexpire": "10",
+      "net.inet.tcp.drop_synfin": "1",
+      "net.inet6.ipsec6.debug": "0",
+      "net.inet.ip.fw.verbose": "0",
+      "net.inet6.ip6.mcast_pmtu": "0",
+      "net.inet.ipsec.esp_port": "0",
+      "net.smb.fs.kern_soft_deadtimer": "30",
+      "net.inet6.ip6.fw.enable": "1",
+      "net.inet6.ip6.temppltime": "86400",
+      "net.inet.ip.portrange.first": "49152",
+      "net.inet.ipsec.esp_net_deflev": "1",
+      "net.inet.ip.fw.dyn_max": "4096",
+      "net.link.ether.inet.max_age": "1200",
+      "net.inet.udp.log_in_vain": "0",
+      "net.inet6.ip6.forwarding": "0",
+      "net.inet6.icmp6.nd6_llreach_base": "30",
+      "net.inet.ip.scopedroute": "1",
+      "net.inet.ip.dummynet.curr_time": "0",
+      "net.inet6.ip6.redirect": "1",
+      "net.smb.fs.version": "107000",
+      "net.inet.ip.dummynet.ready_heap": "0",
+      "net.key.spi_minval": "256",
+      "net.alf.defaultaction": "1",
+      "net.inet6.icmp6.rediraccept": "1",
+      "net.link.ether.inet.send_conflicting_probes": "1",
+      "net.inet.ip.portrange.hifirst": "49152",
+      "net.inet.tcp.recvspace": "65536",
+      "net.inet.ip.redirect": "1",
+      "net.smb.fs.kern_hard_deadtimer": "600",
+      "net.alf.mqcount": "0",
+      "net.inet.tcp.rfc3465_lim2": "1",
+      "net.inet.tcp.isn_reseed_interval": "0",
+      "net.inet.tcp.packetchain": "50",
+      "net.smb.fs.tcprcvbuf": "261120",
+      "net.inet6.icmp6.nd6_umaxtries": "3",
+      "net.inet6.icmp6.redirtimeout": "600",
+      "net.link.ether.inet.sendllconflict": "0",
+      "net.inet.ip.rtmaxcache": "128",
+      "net.inet6.ip6.accept_rtadv": "0",
+      "net.inet.tcp.reass.maxsegments": "2048",
+      "net.inet.tcp.pmtud_blackhole_mss": "1200",
+      "net.inet.ip.portrange.lowlast": "600",
+      "net.inet.ip.rtminexpire": "10",
+      "net.inet.ip.intr_queue_drops": "0",
+      "net.inet.igmp.v1enable": "1",
+      "net.inet.tcp.rexmt_slop": "200",
+      "net.inet6.icmp6.nd6_onlink_ns_rfc4861": "0",
+      "net.inet6.icmp6.nd6_delay": "5",
+      "net.inet.tcp.slowstart_flightsize": "1",
+      "net.inet.tcp.sack_globalmaxholes": "65536",
+      "net.inet.udp.blackhole": "0",
+      "net.local.dgram.recvspace": "4096",
+      "net.inet.tcp.pcbcount": "23",
+      "net.inet.tcp.ecn_negotiate_in": "0",
+      "net.inet6.mld.debug": "0",
+      "net.inet.tcp.delayed_ack": "3",
+      "net.inet.ip.dummynet.debug": "0",
+      "net.inet6.icmp6.nd6_accept_6to4": "1",
+      "net.inet6.ip6.rtexpire": "3600",
+      "net.inet.tcp.minmss": "216",
+      "net.inet.icmp.timestamp": "0",
+      "net.inet.ipsec.ah_trans_deflev": "1",
+      "net.inet.tcp.log_in_vain": "0",
+      "net.inet.tcp.socket_unlocked_on_output": "1",
+      "net.inet.tcp.sack": "1",
+      "net.inet.ip.fw.debug": "0",
+      "net.inet6.ip6.rr_prune": "5",
+      "net.inet.ipsec.esp_randpad": "-1",
+      "net.alf.loglevel": "55",
+      "net.inet6.ip6.tempvltime": "604800",
+      "net.inet.tcp.pmtud_blackhole_detection": "1",
+      "net.inet.tcp.min_iaj_win": "4",
+      "net.inet6.ipsec6.esp_trans_deflev": "1",
+      "net.inet6.ip6.scopedroute": "1",
+      "net.link.ether.inet.prune_intvl": "300",
+      "net.statistics": "1",
+      "net.inet6.ip6.auto_flowlabel": "1",
+      "net.inet.tcp.v6mssdflt": "1024",
+      "net.inet.ip.random_id": "1",
+      "net.inet6.ip6.mcast.loop": "1",
+      "net.inet.tcp.keepintvl": "75000",
+      "net.link.generic.system.dlil_verbose": "0",
+      "net.inet6.ipsec6.esp_net_deflev": "1",
+      "net.inet.udp.pcbcount": "34",
+      "net.inet.igmp.legacysupp": "0",
+      "net.inet.tcp.keepinit": "75000",
+      "net.inet.ip.fw.one_pass": "0",
+      "net.inet6.ip6.hdrnestlimit": "15",
+      "net.inet.udp.checksum": "1",
+      "net.smb.fs.loglevel": "0",
+      "net.inet.ip.maxfrags": "2048",
+      "net.inet.ip.subnets_are_local": "0",
+      "net.inet.tcp.win_scale_factor": "3",
+      "net.inet.tcp.timer_fastmode_idlemax": "20",
+      "net.key.prefered_oldsa": "0",
+      "net.inet.ip.dummynet.search_steps": "0",
+      "net.smb.fs.kern_ntlmssp": "0",
+      "net.inet6.icmp6.nd6_prune": "1",
+      "net.inet6.ipsec6.def_policy": "1",
+      "net.inet6.ip6.use_tempaddr": "1",
+      "net.inet.tcp.strict_rfc1948": "0",
+      "net.key.blockacq_lifetime": "20",
+      "net.inet6.ip6.gifhlim": "0",
+      "net.inet.ip.fw.verbose_limit": "0",
+      "net.inet.ip.dummynet.red_max_pkt_size": "1500",
+      "net.inet.igmp.default_version": "3",
+      "net.inet.ip.ttl": "64",
+      "net.inet.ip.fw.dyn_rst_lifetime": "1",
+      "net.inet6.ip6.keepfaith": "0",
+      "net.inet.tcp.broken_peer_syn_rxmit_thres": "7",
+      "net.inet.ip.dummynet.expire": "1",
+      "net.link.ether.inet.arp_llreach_base": "30",
+      "net.inet6.mld.gsrdelay": "10",
+      "net.inet6.ipsec6.ah_net_deflev": "1",
+      "net.inet.tcp.bg_ss_fltsz": "2",
+      "net.inet.tcp.acc_iaj_high_thresh": "100",
+      "net.inet.ip.mcast.loop": "1",
+      "net.idle.route.expire_timeout": "30",
+      "net.inet6.ip6.mcast.maxgrpsrc": "512",
+      "net.inet.ip.dummynet.red_avg_pkt_size": "512",
+      "net.inet.tcp.local_slowstart_flightsize": "8",
+      "net.inet.ip.linklocal.in.allowbadttl": "1",
+      "net.inet.tcp.sack_maxholes": "128",
+      "net.inet.tcp.rfc3390": "1",
+      "net.inet.ip.portrange.last": "65535",
+      "net.inet.ipsec.def_policy": "1",
+      "net.inet.tcp.recv_allowed_iaj": "5",
+      "net.inet6.ip6.prefer_tempaddr": "1",
+      "net.inet6.ip6.only_allow_rfc4193_prefixes": "0",
+      "net.inet6.ip6.fw.debug": "0",
+      "net.inet6.ip6.rtminexpire": "10",
+      "net.inet.ip.accept_sourceroute": "0",
+      "net.inet.icmp.log_redirect": "0",
+      "net.link.ether.inet.proxyall": "0",
+      "net.inet.tcp.acc_iaj_react_limit": "200",
+      "net.inet.ip.maxfragpackets": "1024",
+      "net.inet.tcp.msl": "15000",
+      "net.key.blockacq_count": "10",
+      "net.inet.tcp.sockthreshold": "64",
+      "net.inet6.ip6.v6only": "0",
+      "net.inet.ipsec.ah_offsetmask": "0",
+      "net.inet.udp.randomize_ports": "1",
+      "net.inet.ip.check_interface": "0",
+      "net.inet.ip.fw.enable": "1",
+      "net.inet.ip.dummynet.extract_heap": "0",
+      "net.inet6.ipsec6.ah_trans_deflev": "1",
+      "net.inet.tcp.tcp_resched_timerlist": "37046",
+      "net.link.bridge.log_stp": "0",
+      "net.inet.tcp.background_sockets": "-3",
+      "net.inet.tcp.bg_tether_shift": "1",
+      "net.inet.tcp.bg_allowed_increase": "2",
+      "net.inet6.ip6.maxfragpackets": "1024",
+      "net.smb.fs.kern_deadtimer": "60",
+      "net.inet.ip.portrange.lowfirst": "1023",
+      "net.inet.ipsec.ah_cleartos": "1",
+      "net.inet6.mld.use_allow": "1",
+      "net.inet6.ip6.use_deprecated": "1",
+      "net.inet.tcp.sendspace": "65536",
+      "net.link.ether.inet.log_arp_warnings": "0",
+      "net.inet.udp.recvspace": "42080",
+      "net.alf.perm": "0",
+      "net.inet6.ip6.mcast.maxsocksrc": "128",
+      "net.inet.ip.fw.dyn_short_lifetime": "5",
+      "net.inet.tcp.rtt_samples_per_slot": "20",
+      "net.local.stream.sendspace": "8192",
+      "net.inet.ip.fw.dyn_count": "0",
+      "net.inet.ip.dummynet.hash_size": "64",
+      "net.inet.tcp.reass.overflows": "0",
+      "net.inet6.icmp6.nd6_maxnudhint": "0",
+      "net.inet6.ip6.use_defaultzone": "0",
+      "net.inet.tcp.tso": "1",
+      "net.link.ether.inet.apple_hwcksum_rx": "1",
+      "net.inet.tcp.do_tcpdrain": "0",
+      "net.inet.ipsec.bypass": "1",
+      "net.inet.tcp.mssdflt": "512",
+      "net.local.inflight": "0",
+      "net.inet.tcp.rfc1323": "1",
+      "net.link.generic.system.dlil_input_sanity_check": "0",
+      "net.key.int_random": "60",
+      "net.inet.ipsec.ah_net_deflev": "1",
+      "net.inet.tcp.tcbhashsize": "4096",
+      "net.link.generic.system.multi_threaded_input": "1",
+      "net.inet6.ip6.neighborgcthresh": "1024",
+      "net.inet.tcp.max_persist_timeout": "0",
+      "net.link.generic.system.ifcount": "7",
+      "net.inet.ip.fw.dyn_keepalive": "1",
+      "net.inet.icmp.drop_redirect": "0",
+      "net.inet.ipsec.debug": "0",
+      "net.link.ether.inet.keep_announcements": "1",
+      "net.inet6.icmp6.nd6_useloopback": "1",
+      "net.inet6.ip6.rtmaxcache": "128",
+      "net.inet.tcp.path_mtu_discovery": "1",
+      "net.inet.ip.fw.curr_dyn_buckets": "256",
+      "net.inet.tcp.icmp_may_rst": "1",
+      "net.key.esp_auth": "0",
+      "net.inet.tcp.recvbg": "0",
+      "net.inet.tcp.maxseg_unacked": "8",
+      "net.link.ether.inet.apple_hwcksum_tx": "1",
+      "net.key.ah_keymin": "128",
+      "net.inet.raw.recvspace": "8192",
+      "net.inet.tcp.rfc3465": "1",
+      "net.inet.tcp.minmssoverload": "0",
+      "net.link.ether.inet.maxtries": "5",
+      "net.inet6.ip6.log_interval": "5"
+    },
+    "interfaces": {
+      "en0": {
+        "flags": [
+          "UP",
+          "BROADCAST",
+          "SMART",
+          "RUNNING",
+          "SIMPLEX",
+          "MULTICAST"
+        ],
+        "mtu": "1500",
+        "number": "0",
+        "type": "en",
+        "addresses": {
+          "10:93:e9:0c:0e:f8": {
+            "family": "lladdr"
+          }
+        },
+        "encapsulation": "Ethernet"
+      },
+      "stf0": {
+        "flags": [
+
+        ],
+        "mtu": "1280",
+        "number": "0",
+        "type": "stf",
+        "addresses": {
+
+        },
+        "encapsulation": "6to4"
+      },
+      "p2p0": {
+        "flags": [
+          "UP",
+          "BROADCAST",
+          "RUNNING",
+          "SIMPLEX",
+          "MULTICAST"
+        ],
+        "mtu": "2304",
+        "number": "0",
+        "type": "p2p",
+        "addresses": {
+          "02:93:e9:0c:0e:f8": {
+            "family": "lladdr"
+          }
+        },
+        "encapsulation": "Ethernet"
+      },
+      "lo0": {
+        "flags": [
+          "UP",
+          "LOOPBACK",
+          "RUNNING",
+          "MULTICAST"
+        ],
+        "mtu": "16384",
+        "number": "0",
+        "type": "lo",
+        "addresses": {
+          "fe80::1": {
+            "prefixlen": "64",
+            "scope": "Link",
+            "family": "inet6"
+          },
+          "::1": {
+            "prefixlen": "128",
+            "scope": "Node",
+            "family": "inet6"
+          },
+          "127.0.0.1": {
+            "family": "inet",
+            "netmask": "255.0.0.0"
+          }
+        },
+        "encapsulation": "Loopback"
+      },
+      "gif0": {
+        "flags": [
+          "POINTOPOINT",
+          "MULTICAST"
+        ],
+        "mtu": "1280",
+        "number": "0",
+        "type": "gif",
+        "addresses": {
+
+        },
+        "encapsulation": "IPIP"
+      }
+    }
+  },
+  "platform_version": "10.7.4",
+  "kernel": {
+    "version": "Darwin Kernel Version 11.4.0: Mon Apr  9 19:32:15 PDT 2012; root:xnu-1699.26.8~1/RELEASE_X86_64",
+    "machine": "x86_64",
+    "name": "Darwin",
+    "release": "11.4.0",
+    "os": "Darwin"
+  },
+  "current_user": "ay",
+  "platform_family": "mac_os_x",
+  "platform": "mac_os_x",
+  "etc": {
+    "passwd": {
+      "_xgridagent": {
+        "shell": "/usr/bin/false",
+        "uid": 86,
+        "dir": "/var/xgrid/agent",
+        "gid": 86,
+        "gecos": "Xgrid Agent"
+      },
+      "_ard": {
+        "shell": "/usr/bin/false",
+        "uid": 67,
+        "dir": "/var/empty",
+        "gid": 67,
+        "gecos": "Apple Remote Desktop"
+      },
+      "_mcxalr": {
+        "shell": "/usr/bin/false",
+        "uid": 54,
+        "dir": "/var/empty",
+        "gid": 54,
+        "gecos": "MCX AppLaunch"
+      },
+      "_atsserver": {
+        "shell": "/usr/bin/false",
+        "uid": 97,
+        "dir": "/var/empty",
+        "gid": 97,
+        "gecos": "ATS Server"
+      },
+      "_krb_kerberos": {
+        "shell": "/usr/bin/false",
+        "uid": 233,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Open Directory Kerberos"
+      },
+      "macports": {
+        "shell": "/usr/bin/false",
+        "uid": 503,
+        "dir": "/opt/local/var/macports/home",
+        "gid": 501,
+        "gecos": "MacPorts"
+      },
+      "_www": {
+        "shell": "/usr/bin/false",
+        "uid": 70,
+        "dir": "/Library/WebServer",
+        "gid": 70,
+        "gecos": "World Wide Web Server"
+      },
+      "_appserver": {
+        "shell": "/usr/bin/false",
+        "uid": 79,
+        "dir": "/var/empty",
+        "gid": 79,
+        "gecos": "Application Server"
+      },
+      "_dovecot": {
+        "shell": "/usr/bin/false",
+        "uid": 214,
+        "dir": "/var/empty",
+        "gid": 6,
+        "gecos": "Dovecot Administrator"
+      },
+      "_scsd": {
+        "shell": "/usr/bin/false",
+        "uid": 31,
+        "dir": "/var/empty",
+        "gid": 31,
+        "gecos": "Service Configuration Service"
+      },
+      "root": {
+        "shell": "/bin/sh",
+        "uid": 0,
+        "dir": "/var/root",
+        "gid": 0,
+        "gecos": "System Administrator"
+      },
+      "_windowserver": {
+        "shell": "/usr/bin/false",
+        "uid": 88,
+        "dir": "/var/empty",
+        "gid": 88,
+        "gecos": "WindowServer"
+      },
+      "_devdocs": {
+        "shell": "/usr/bin/false",
+        "uid": 59,
+        "dir": "/var/empty",
+        "gid": 59,
+        "gecos": "Developer Documentation"
+      },
+      "_warmd": {
+        "shell": "/usr/bin/false",
+        "uid": 224,
+        "dir": "/var/empty",
+        "gid": 224,
+        "gecos": "Warm Daemon"
+      },
+      "_teamsserver": {
+        "shell": "/usr/bin/false",
+        "uid": 94,
+        "dir": "/var/teamsserver",
+        "gid": 94,
+        "gecos": "TeamsServer"
+      },
+      "_mailman": {
+        "shell": "/usr/bin/false",
+        "uid": 78,
+        "dir": "/var/empty",
+        "gid": 78,
+        "gecos": "Mailman List Server"
+      },
+      "_coreaudiod": {
+        "shell": "/usr/bin/false",
+        "uid": 202,
+        "dir": "/var/empty",
+        "gid": 202,
+        "gecos": "Core Audio Daemon"
+      },
+      "munin": {
+        "shell": "/dev/null",
+        "uid": 500,
+        "dir": "/dev/null",
+        "gid": 500,
+        "gecos": "munin"
+      },
+      "_webauthserver": {
+        "shell": "/usr/bin/false",
+        "uid": 221,
+        "dir": "/var/empty",
+        "gid": 221,
+        "gecos": "Web Auth Server"
+      },
+      "_tokend": {
+        "shell": "/usr/bin/false",
+        "uid": 91,
+        "dir": "/var/empty",
+        "gid": 91,
+        "gecos": "Token Daemon"
+      },
+      "_krb_anonymous": {
+        "shell": "/usr/bin/false",
+        "uid": 234,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Open Directory Kerberos Anonymous"
+      },
+      "_cvs": {
+        "shell": "/usr/bin/false",
+        "uid": 72,
+        "dir": "/var/empty",
+        "gid": 72,
+        "gecos": "CVS Server"
+      },
+      "_installassistant": {
+        "shell": "/usr/bin/false",
+        "uid": 25,
+        "dir": "/var/empty",
+        "gid": 25,
+        "gecos": "Install Assistant"
+      },
+      "_locationd": {
+        "shell": "/usr/bin/false",
+        "uid": 205,
+        "dir": "/var/empty",
+        "gid": 205,
+        "gecos": "Location Daemon"
+      },
+      "_netbios": {
+        "shell": "/usr/bin/false",
+        "uid": 222,
+        "dir": "/var/empty",
+        "gid": 222,
+        "gecos": "NetBIOS"
+      },
+      "_postgres": {
+        "shell": "/usr/bin/false",
+        "uid": 216,
+        "dir": "/var/empty",
+        "gid": 216,
+        "gecos": "PostgreSQL Server"
+      },
+      "_lp": {
+        "shell": "/usr/bin/false",
+        "uid": 26,
+        "dir": "/var/spool/cups",
+        "gid": 26,
+        "gecos": "Printing Services"
+      },
+      "_uucp": {
+        "shell": "/usr/sbin/uucico",
+        "uid": 4,
+        "dir": "/var/spool/uucp",
+        "gid": 4,
+        "gecos": "Unix to Unix Copy Protocol"
+      },
+      "_dpaudio": {
+        "shell": "/usr/bin/false",
+        "uid": 215,
+        "dir": "/var/empty",
+        "gid": 215,
+        "gecos": "DP Audio"
+      },
+      "_dovenull": {
+        "shell": "/usr/bin/false",
+        "uid": 227,
+        "dir": "/var/empty",
+        "gid": 227,
+        "gecos": "Dovecot Authentication"
+      },
+      "_qtss": {
+        "shell": "/usr/bin/false",
+        "uid": 76,
+        "dir": "/var/empty",
+        "gid": 76,
+        "gecos": "QuickTime Streaming Server"
+      },
+      "daemon": {
+        "shell": "/usr/bin/false",
+        "uid": 1,
+        "dir": "/var/root",
+        "gid": 1,
+        "gecos": "System Services"
+      },
+      "_taskgated": {
+        "shell": "/usr/bin/false",
+        "uid": 13,
+        "dir": "/var/empty",
+        "gid": 13,
+        "gecos": "Task Gate Daemon"
+      },
+      "_cvmsroot": {
+        "shell": "/usr/bin/false",
+        "uid": 212,
+        "dir": "/var/empty",
+        "gid": 212,
+        "gecos": "CVMS Root"
+      },
+      "_update_sharing": {
+        "shell": "/usr/bin/false",
+        "uid": 95,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Update Sharing"
+      },
+      "_spotlight": {
+        "shell": "/usr/bin/false",
+        "uid": 89,
+        "dir": "/var/empty",
+        "gid": 89,
+        "gecos": "Spotlight"
+      },
+      "_unknown": {
+        "shell": "/usr/bin/false",
+        "uid": 99,
+        "dir": "/var/empty",
+        "gid": 99,
+        "gecos": "Unknown User"
+      },
+      "_pcastserver": {
+        "shell": "/usr/bin/false",
+        "uid": 56,
+        "dir": "/var/pcast/server",
+        "gid": 56,
+        "gecos": "Podcast Producer Server"
+      },
+      "_installer": {
+        "shell": "/usr/bin/false",
+        "uid": 96,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Installer"
+      },
+      "ay": {
+        "shell": "/bin/bash",
+        "uid": 502,
+        "dir": "/Users/ay",
+        "gid": 20,
+        "gecos": "Audun Ytterdal"
+      },
+      "_mongo": {
+        "shell": "/usr/bin/false",
+        "uid": 504,
+        "dir": "/var/empty",
+        "gid": 502,
+        "gecos": "MongoDB Server"
+      },
+      "_avbdeviced": {
+        "shell": "/usr/bin/false",
+        "uid": 229,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Ethernet AVB Device Daemon"
+      },
+      "_svn": {
+        "shell": "/usr/bin/false",
+        "uid": 73,
+        "dir": "/var/empty",
+        "gid": 73,
+        "gecos": "SVN Server"
+      },
+      "_ftp": {
+        "shell": "/usr/bin/false",
+        "uid": 98,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "FTP Daemon"
+      },
+      "_appowner": {
+        "shell": "/usr/bin/false",
+        "uid": 87,
+        "dir": "/var/empty",
+        "gid": 87,
+        "gecos": "Application Owner"
+      },
+      "_networkd": {
+        "shell": "/usr/bin/false",
+        "uid": 24,
+        "dir": "/var/empty",
+        "gid": 24,
+        "gecos": "Network Services"
+      },
+      "_calendar": {
+        "shell": "/usr/bin/false",
+        "uid": 93,
+        "dir": "/var/empty",
+        "gid": 93,
+        "gecos": "Calendar"
+      },
+      "_pcastagent": {
+        "shell": "/usr/bin/false",
+        "uid": 55,
+        "dir": "/var/pcast/agent",
+        "gid": 55,
+        "gecos": "Podcast Producer Agent"
+      },
+      "_timezone": {
+        "shell": "/usr/bin/false",
+        "uid": 210,
+        "dir": "/var/empty",
+        "gid": 210,
+        "gecos": "AutoTimeZoneDaemon"
+      },
+      "_pcastlibrary": {
+        "shell": "/usr/bin/false",
+        "uid": 225,
+        "dir": "/Library/Server/PodcastLibrary",
+        "gid": 225,
+        "gecos": "Podcast Library Server"
+      },
+      "_krb_krbtgt": {
+        "shell": "/usr/bin/false",
+        "uid": 230,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Open Directory Kerberos Ticket Granting Ticket"
+      },
+      "_krb_kadmin": {
+        "shell": "/usr/bin/false",
+        "uid": 231,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Open Directory Kerberos Admin Service"
+      },
+      "_softwareupdate": {
+        "shell": "/usr/bin/false",
+        "uid": 200,
+        "dir": "/var/empty",
+        "gid": 200,
+        "gecos": "Software Update Service"
+      },
+      "elisabhs": {
+        "shell": "/bin/bash",
+        "uid": 501,
+        "dir": "/Users/elisabhs",
+        "gid": 20,
+        "gecos": "Elisabeth Høidal Ytterdal"
+      },
+      "_clamav": {
+        "shell": "/usr/bin/false",
+        "uid": 82,
+        "dir": "/var/virusmails",
+        "gid": 82,
+        "gecos": "ClamAV Daemon"
+      },
+      "_krbtgt": {
+        "shell": "/usr/bin/false",
+        "uid": 217,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Kerberos Ticket Granting Ticket"
+      },
+      "_usbmuxd": {
+        "shell": "/usr/bin/false",
+        "uid": 213,
+        "dir": "/var/db/lockdown",
+        "gid": 213,
+        "gecos": "iPhone OS Device Helper"
+      },
+      "_serialnumberd": {
+        "shell": "/usr/bin/false",
+        "uid": 58,
+        "dir": "/var/empty",
+        "gid": 58,
+        "gecos": "Serial Number Daemon"
+      },
+      "_screensaver": {
+        "shell": "/usr/bin/false",
+        "uid": 203,
+        "dir": "/var/empty",
+        "gid": 203,
+        "gecos": "Screensaver"
+      },
+      "_ces": {
+        "shell": "/usr/bin/false",
+        "uid": 32,
+        "dir": "/var/empty",
+        "gid": 32,
+        "gecos": "Certificate Enrollment Service"
+      },
+      "_kadmin_admin": {
+        "shell": "/usr/bin/false",
+        "uid": 218,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Kerberos Admin Service"
+      },
+      "_eppc": {
+        "shell": "/usr/bin/false",
+        "uid": 71,
+        "dir": "/var/empty",
+        "gid": 71,
+        "gecos": "Apple Events User"
+      },
+      "_amavisd": {
+        "shell": "/usr/bin/false",
+        "uid": 83,
+        "dir": "/var/virusmails",
+        "gid": 83,
+        "gecos": "AMaViS Daemon"
+      },
+      "_mysql": {
+        "shell": "/usr/bin/false",
+        "uid": 74,
+        "dir": "/var/empty",
+        "gid": 74,
+        "gecos": "MySQL Server"
+      },
+      "_netstatistics": {
+        "shell": "/usr/bin/false",
+        "uid": 228,
+        "dir": "/var/empty",
+        "gid": 228,
+        "gecos": "Network Statistics Daemon"
+      },
+      "_devicemgr": {
+        "shell": "/usr/bin/false",
+        "uid": 220,
+        "dir": "/var/empty",
+        "gid": 220,
+        "gecos": "Device Management Server"
+      },
+      "_xgridcontroller": {
+        "shell": "/usr/bin/false",
+        "uid": 85,
+        "dir": "/var/xgrid/controller",
+        "gid": 85,
+        "gecos": "Xgrid Controller"
+      },
+      "_sandbox": {
+        "shell": "/usr/bin/false",
+        "uid": 60,
+        "dir": "/var/empty",
+        "gid": 60,
+        "gecos": "Seatbelt"
+      },
+      "_securityagent": {
+        "shell": "/usr/bin/false",
+        "uid": 92,
+        "dir": "/var/empty",
+        "gid": 92,
+        "gecos": "SecurityAgent"
+      },
+      "_kadmin_changepw": {
+        "shell": "/usr/bin/false",
+        "uid": 219,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Kerberos Change Password Service"
+      },
+      "_sshd": {
+        "shell": "/usr/bin/false",
+        "uid": 75,
+        "dir": "/var/empty",
+        "gid": 75,
+        "gecos": "sshd Privilege separation"
+      },
+      "_postfix": {
+        "shell": "/usr/bin/false",
+        "uid": 27,
+        "dir": "/var/spool/postfix",
+        "gid": 27,
+        "gecos": "Postfix Mail Server"
+      },
+      "nobody": {
+        "shell": "/usr/bin/false",
+        "uid": 4294967294,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Unprivileged User"
+      },
+      "_jabber": {
+        "shell": "/usr/bin/false",
+        "uid": 84,
+        "dir": "/var/jabberd/ChatHome",
+        "gid": 84,
+        "gecos": "Jabber XMPP Server"
+      },
+      "_trustevaluationagent": {
+        "shell": "/usr/bin/false",
+        "uid": 208,
+        "dir": "/var/empty",
+        "gid": 208,
+        "gecos": "Trust Evaluation Agent"
+      },
+      "_krb_changepw": {
+        "shell": "/usr/bin/false",
+        "uid": 232,
+        "dir": "/var/empty",
+        "gid": 4294967294,
+        "gecos": "Open Directory Kerberos Change Password Service"
+      },
+      "_mdnsresponder": {
+        "shell": "/usr/bin/false",
+        "uid": 65,
+        "dir": "/var/empty",
+        "gid": 65,
+        "gecos": "mDNSResponder"
+      },
+      "_cyrus": {
+        "shell": "/usr/bin/false",
+        "uid": 77,
+        "dir": "/var/imap",
+        "gid": 6,
+        "gecos": "Cyrus Administrator"
+      },
+      "_lda": {
+        "shell": "/usr/bin/false",
+        "uid": 211,
+        "dir": "/var/empty",
+        "gid": 211,
+        "gecos": "Local Delivery Agent"
+      }
+    },
+    "group": {
+      "_xgridagent": {
+        "gid": 86,
+        "members": [
+
+        ]
+      },
+      "_ard": {
+        "gid": 67,
+        "members": [
+
+        ]
+      },
+      "_mcxalr": {
+        "gid": 54,
+        "members": [
+
+        ]
+      },
+      "_atsserver": {
+        "gid": 97,
+        "members": [
+
+        ]
+      },
+      "_podcastlibraryfeedadmins": {
+        "gid": 226,
+        "members": [
+          "_teamsserver"
+        ]
+      },
+      "macports": {
+        "gid": 501,
+        "members": [
+
+        ]
+      },
+      "_www": {
+        "gid": 70,
+        "members": [
+          "_devicemgr",
+          "_teamsserver"
+        ]
+      },
+      "_appserverusr": {
+        "gid": 79,
+        "members": [
+
+        ]
+      },
+      "_developer": {
+        "gid": 204,
+        "members": [
+
+        ]
+      },
+      "_lpoperator": {
+        "gid": 100,
+        "members": [
+
+        ]
+      },
+      "_detachedsig": {
+        "gid": 207,
+        "members": [
+          "_locationd"
+        ]
+      },
+      "_keytabusers": {
+        "gid": 30,
+        "members": [
+          "_calendar",
+          "_jabber",
+          "_postfix",
+          "_xgridagent"
+        ]
+      },
+      "_scsd": {
+        "gid": 31,
+        "members": [
+
+        ]
+      },
+      "_windowserver": {
+        "gid": 88,
+        "members": [
+
+        ]
+      },
+      "_devdocs": {
+        "gid": 59,
+        "members": [
+
+        ]
+      },
+      "wheel": {
+        "gid": 0,
+        "members": [
+          "root"
+        ]
+      },
+      "owner": {
+        "gid": 10,
+        "members": [
+
+        ]
+      },
+      "mail": {
+        "gid": 6,
+        "members": [
+          "_teamsserver"
+        ]
+      },
+      "accessibility": {
+        "gid": 90,
+        "members": [
+
+        ]
+      },
+      "_warmd": {
+        "gid": 224,
+        "members": [
+          "_warmd"
+        ]
+      },
+      "_teamsserver": {
+        "gid": 94,
+        "members": [
+
+        ]
+      },
+      "_cvms": {
+        "gid": 212,
+        "members": [
+
+        ]
+      },
+      "_mailman": {
+        "gid": 78,
+        "members": [
+
+        ]
+      },
+      "com.apple.sharepoint.group.1": {
+        "gid": 402,
+        "members": [
+          "elisabhs"
+        ]
+      },
+      "_coreaudiod": {
+        "gid": 202,
+        "members": [
+
+        ]
+      },
+      "_carddav": {
+        "gid": 206,
+        "members": [
+
+        ]
+      },
+      "sys": {
+        "gid": 3,
+        "members": [
+          "root"
+        ]
+      },
+      "munin": {
+        "gid": 500,
+        "members": [
+
+        ]
+      },
+      "_webauthserver": {
+        "gid": 221,
+        "members": [
+          "_teamsserver",
+          "_devicemgr"
+        ]
+      },
+      "_tokend": {
+        "gid": 91,
+        "members": [
+
+        ]
+      },
+      "_postdrop": {
+        "gid": 28,
+        "members": [
+
+        ]
+      },
+      "_cvs": {
+        "gid": 72,
+        "members": [
+
+        ]
+      },
+      "_installassistant": {
+        "gid": 25,
+        "members": [
+
+        ]
+      },
+      "_locationd": {
+        "gid": 205,
+        "members": [
+
+        ]
+      },
+      "localaccounts": {
+        "gid": 61,
+        "members": [
+
+        ]
+      },
+      "dialer": {
+        "gid": 68,
+        "members": [
+
+        ]
+      },
+      "admin": {
+        "gid": 80,
+        "members": [
+          "root"
+        ]
+      },
+      "_netbios": {
+        "gid": 222,
+        "members": [
+
+        ]
+      },
+      "_postgres": {
+        "gid": 216,
+        "members": [
+          "_devicemgr",
+          "_calendar",
+          "_teamsserver"
+        ]
+      },
+      "_lp": {
+        "gid": 26,
+        "members": [
+
+        ]
+      },
+      "_uucp": {
+        "gid": 66,
+        "members": [
+
+        ]
+      },
+      "_guest": {
+        "gid": 201,
+        "members": [
+
+        ]
+      },
+      "_dpaudio": {
+        "gid": 215,
+        "members": [
+
+        ]
+      },
+      "_dovenull": {
+        "gid": 227,
+        "members": [
+
+        ]
+      },
+      "_qtss": {
+        "gid": 76,
+        "members": [
+
+        ]
+      },
+      "everyone": {
+        "gid": 12,
+        "members": [
+
+        ]
+      },
+      "daemon": {
+        "gid": 1,
+        "members": [
+          "root"
+        ]
+      },
+      "com.apple.access_screensharing": {
+        "gid": 401,
+        "members": [
+
+        ]
+      },
+      "authedusers": {
+        "gid": 50,
+        "members": [
+
+        ]
+      },
+      "_taskgated": {
+        "gid": 13,
+        "members": [
+          "_taskgated"
+        ]
+      },
+      "procview": {
+        "gid": 8,
+        "members": [
+          "root"
+        ]
+      },
+      "_update_sharing": {
+        "gid": 95,
+        "members": [
+
+        ]
+      },
+      "_spotlight": {
+        "gid": 89,
+        "members": [
+
+        ]
+      },
+      "_unknown": {
+        "gid": 99,
+        "members": [
+
+        ]
+      },
+      "_pcastserver": {
+        "gid": 56,
+        "members": [
+
+        ]
+      },
+      "_installer": {
+        "gid": 96,
+        "members": [
+
+        ]
+      },
+      "_mongo": {
+        "gid": 502,
+        "members": [
+
+        ]
+      },
+      "_svn": {
+        "gid": 73,
+        "members": [
+
+        ]
+      },
+      "_appowner": {
+        "gid": 87,
+        "members": [
+
+        ]
+      },
+      "netusers": {
+        "gid": 52,
+        "members": [
+
+        ]
+      },
+      "_networkd": {
+        "gid": 24,
+        "members": [
+
+        ]
+      },
+      "_calendar": {
+        "gid": 93,
+        "members": [
+          "_teamsserver"
+        ]
+      },
+      "_pcastagent": {
+        "gid": 55,
+        "members": [
+
+        ]
+      },
+      "_timezone": {
+        "gid": 210,
+        "members": [
+
+        ]
+      },
+      "tty": {
+        "gid": 4,
+        "members": [
+          "root"
+        ]
+      },
+      "_pcastlibrary": {
+        "gid": 225,
+        "members": [
+
+        ]
+      },
+      "_softwareupdate": {
+        "gid": 200,
+        "members": [
+          "_softwareupdate"
+        ]
+      },
+      "utmp": {
+        "gid": 45,
+        "members": [
+
+        ]
+      },
+      "nogroup": {
+        "gid": 4294967295,
+        "members": [
+
+        ]
+      },
+      "_clamav": {
+        "gid": 82,
+        "members": [
+
+        ]
+      },
+      "_usbmuxd": {
+        "gid": 213,
+        "members": [
+
+        ]
+      },
+      "_appstore": {
+        "gid": 33,
+        "members": [
+
+        ]
+      },
+      "_serialnumberd": {
+        "gid": 58,
+        "members": [
+
+        ]
+      },
+      "_screensaver": {
+        "gid": 203,
+        "members": [
+
+        ]
+      },
+      "_ces": {
+        "gid": 32,
+        "members": [
+
+        ]
+      },
+      "_amavisd": {
+        "gid": 83,
+        "members": [
+
+        ]
+      },
+      "_mysql": {
+        "gid": 74,
+        "members": [
+
+        ]
+      },
+      "smmsp": {
+        "gid": 101,
+        "members": [
+
+        ]
+      },
+      "_appserveradm": {
+        "gid": 81,
+        "members": [
+
+        ]
+      },
+      "_netstatistics": {
+        "gid": 228,
+        "members": [
+
+        ]
+      },
+      "_devicemgr": {
+        "gid": 220,
+        "members": [
+
+        ]
+      },
+      "_lpadmin": {
+        "gid": 98,
+        "members": [
+
+        ]
+      },
+      "_pcastfeedadmins": {
+        "gid": 223,
+        "members": [
+          "_pcastlibrary"
+        ]
+      },
+      "staff": {
+        "gid": 20,
+        "members": [
+          "root"
+        ]
+      },
+      "procmod": {
+        "gid": 9,
+        "members": [
+          "root"
+        ]
+      },
+      "operator": {
+        "gid": 5,
+        "members": [
+          "root"
+        ]
+      },
+      "netaccounts": {
+        "gid": 62,
+        "members": [
+
+        ]
+      },
+      "group": {
+        "gid": 16,
+        "members": [
+
+        ]
+      },
+      "consoleusers": {
+        "gid": 53,
+        "members": [
+
+        ]
+      },
+      "bin": {
+        "gid": 7,
+        "members": [
+
+        ]
+      },
+      "_xgridcontroller": {
+        "gid": 85,
+        "members": [
+
+        ]
+      },
+      "_odchpass": {
+        "gid": 209,
+        "members": [
+          "_teamsserver"
+        ]
+      },
+      "_sandbox": {
+        "gid": 60,
+        "members": [
+
+        ]
+      },
+      "_securityagent": {
+        "gid": 92,
+        "members": [
+
+        ]
+      },
+      "kmem": {
+        "gid": 2,
+        "members": [
+          "root"
+        ]
+      },
+      "interactusers": {
+        "gid": 51,
+        "members": [
+
+        ]
+      },
+      "com.apple.sharepoint.group.2": {
+        "gid": 403,
+        "members": [
+          "ay"
+        ]
+      },
+      "_sshd": {
+        "gid": 75,
+        "members": [
+
+        ]
+      },
+      "_postfix": {
+        "gid": 27,
+        "members": [
+
+        ]
+      },
+      "nobody": {
+        "gid": 4294967294,
+        "members": [
+
+        ]
+      },
+      "network": {
+        "gid": 69,
+        "members": [
+
+        ]
+      },
+      "certusers": {
+        "gid": 29,
+        "members": [
+          "root",
+          "_jabber",
+          "_postfix",
+          "_cyrus",
+          "_calendar",
+          "_dovecot"
+        ]
+      },
+      "_jabber": {
+        "gid": 84,
+        "members": [
+
+        ]
+      },
+      "_trustevaluationagent": {
+        "gid": 208,
+        "members": [
+
+        ]
+      },
+      "_mdnsresponder": {
+        "gid": 65,
+        "members": [
+
+        ]
+      },
+      "_lda": {
+        "gid": 211,
+        "members": [
+
+        ]
+      }
+    }
+  },
+  "macaddress": "02:93:e9:0c:0e:f8",
+  "os": "darwin"
+}

@@ -1,0 +1,10 @@
+{
+    "uuid": "xxxx-xxxx-xxxx-xxxx",
+    "hostname": "foobar.int.vgnett.no",
+    "type": "client",
+    "memory": {
+        "total": 123456,
+        "free": 12345,
+    }
+
+}

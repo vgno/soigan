@@ -21,11 +21,13 @@ util.log("identiy is " + identity);
 socket.on('connect', function() {
     util.log("Connected to " + serverUrl);
     if (identity) {
-        socket.emit('info', { 'type': 'client', 'id': identity });
+        socket.emit('info', { 'type': 'node', 'uuid': identity, 'hostname': os.hostname() });
     } else {
-        socket.emit('info', { 'type' : 'client' });
+        socket.emit('info', { 'type' : 'node', 'hostname': os.hostname() });
     }
-
+    socket.on('info', function(data) {
+        util.log("We got something back" + util.inspect(data));
+    });
     setInterval(function() {
         util.log('Munin Push!');
 

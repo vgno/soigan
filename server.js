@@ -1,3 +1,4 @@
+var os = require('os');
 var express = require('express');
 var util = require('util');
 var uuid = require('node-uuid');
@@ -7,8 +8,16 @@ var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 var logger = io.log;
 
-io.set('log level', 1);
+var serverInfo =  {
+    "hostname":os.hostname(),
+    "type":"server",
+    "version":"servers version",
+    "protocol":"1",
+    "id":"ServerID"
+};
 
+
+io.set('log level', 1);
 
 server.listen(3000);
 
@@ -30,23 +39,31 @@ app.use(express.static(__dirname + '/public'));
  */
 
 io.sockets.on('connection', function (socket) {
-    socket.on('auth', function(data) {
-        if (data.type == 'client') {
+    socket.on('info', function(data) {
+        var clientUuid;
+        util.log("Something connected: " + util.inspect(data));
+        if (data.type == 'node') {
             socket.join('clients');
-            if (data.id) {
+            socket.join('nodes');
+            if (data.uuid) {
                 // Check if this is a valid data.id
-                util.log("client sent id" + data.id);
+                util.log("client sent id" + data.uuid);
                 // Let's just say it's a correct id
-                socket.emit('core', {"status": "ok"})
+                clientUuid = data.uuid;
             } else {
-                var id = uuid.v4();
-                socket.emit('info', { 'uuid': id });
-                util.log("Sending " + id + " to new client");
+                util.log("Unknown client. Creating new uuid");
+                clientUuid = uuid.v4();
             }
-            socket.emit('status', 'ok');
-            io.sockets.in('browsers').emit('newClient', { client: data.id });
-            util.log('Got new client "' + data.id + '"' );
+            var localServerInfo = serverInfo;//clientUUID" =  "foo"
+            localServerInfo.uuid = clientUuid;
+            localServerInfo.status = "OK";
+            data.uuid = clientUuid;
+            util.log("localserverinfo: " + util.inspect(localServerInfo));
+            socket.emit("info", localServerInfo);
+            io.sockets.in('browsers').emit('newClient', { client: data.uuid });
+            util.log('Got new client "' + data.uuid + '"' );
         } else if (data.type == 'browser') {
+            socket.join('clients');
             socket.join('browsers');
             socket.emit('status', 'ok');
             util.log('Got new Browser "' + data.id +  '"' )

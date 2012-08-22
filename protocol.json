@@ -1,0 +1,42 @@
+// Client connects to server for the first time
+//  Is this smart?
+
+
+{
+    "info":{
+        "hostname":"foo.bar.no",
+        "type":"browser/node/administrative",
+        "uuid":"123f-123f-123f|undefined",
+        "ip":"123.123.1.2",
+        "version":"1.0",
+        "protocol":"1",
+        "uname":"uname -sm"
+    },
+    // Server response
+    "info":{
+        "hostname":"server hostname",
+        "type":"server",
+        "version":"servers version",
+        "protocol":"1"
+        "uuid":"ServerID",
+        "clientId":"clients ID",
+        "status":"OK"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
